@@ -1,3 +1,17 @@
+
 name: Taya365-Pro
 region: us-east-1
 yamlVersion: 2
+frontend:
+  # Specifies the path of your client code.
+  path: .
+  # Specifies the path to the build directory.
+  # This is the folder that will be deployed.
+  publish: build
+  # The frontend will be deployed as `https://cool-capybara.app.genez.io`,
+  subdomain: taya365-pro
+  # Scripts will run in the specified `path` folder.
+  scripts:
+    # The command to build your frontend project. This is custom to your project.
+    # It must to populate the specified `publish` folder with a `index.html` file.
+    build: npm run build
